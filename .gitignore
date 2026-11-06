@@ -1,0 +1,40 @@
+# Fichiers de configuration sensibles
+.env
+.env.*
+!.env.example
+
+# Dossier writable (logs, cache, sessions, debugbar, uploads)
+writable/cache/*
+!writable/cache/index.html
+writable/logs/*
+!writable/logs/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+writable/debugbar/*
+
+# Dépendances Composer
+vendor/
+composer.lock
+
+# Dumps de base de données
+*.sql
+*.sql.gz
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Tests
+build/
+.phpunit.result.cache
+
+# Archives / sauvegardes
+*.zip
+*.rar
+*.7z
+*.bak
